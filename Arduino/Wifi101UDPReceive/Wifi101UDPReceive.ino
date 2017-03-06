@@ -13,31 +13,31 @@ unsigned int localPort = 0000;  // local port to listen on
 WiFiUDP Udp;
 
 void setup() {
-  //Initialize serial and wait for port to open:
+  // Initialize serial and wait for port to open:
   Serial.begin(9600);
   while (!Serial) {
     ; // wait for serial port to connect. Needed for native USB port only
   }
   
-  // check for the presence of the shield:
+  // Check for the presence of the shield:
   if (WiFi.status() == WL_NO_SHIELD) {
     Serial.println("WiFi shield not present");
     // don't continue:
     while (true);
   }
 
-  // attempt to connect to WiFi network:
+  // Attempt to connect to WiFi network:
   while ( status != WL_CONNECTED) {
     Serial.print("Attempting to connect to WPA SSID: ");
     Serial.println(ssid);
     // Connect to WPA/WPA2 network:
     status = WiFi.begin(ssid, pass);
 
-    // wait 10 seconds for connection:
+    // Wait 10 seconds for connection:
     delay(10000);
   }
 
-  // you're connected now, so print out the data:
+  // You're connected now, so print out the data:
   Serial.println();
   Serial.println("You're connected to the network");
   Serial.println();
