@@ -1,4 +1,5 @@
-# machine-learning-workshop
+# Machine Learning Workshop
+
 Machine Learning workshop for IDE Academy
 
 ## Remote control theremin
