@@ -12,3 +12,4 @@ Parts:
 * Push button
 * Breadboard
 * Jumper wires
+* Lithium polymer battery (optional)
