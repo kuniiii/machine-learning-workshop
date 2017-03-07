@@ -25,3 +25,9 @@ You will need to install the [Wifi101](https://www.arduino.cc/en/Reference/WiFi1
 Edit the sketch 'remoteControlTheremin' with your WiFi's SSID, password and the port you're sending OSC messages to. The Arduino listens to a message with the address '/wek/outputs'. The first data position should contain a real number ranging from zero to one. Based on this number the Arduino will set the buzzer's tone to a pitch ranging from 16 to 2048 hertz. Push the button to stop the tone from playing.
 
 This was designed to be used with the Wekinator, but should work with anything capable of sending OSC messages over UDP.
+
+### Sources:
+
+* WiFi code adapted from: https://www.arduino.cc/en/Tutorial/Wifi101ConnectWithWPA
+* OSC code adapted from: https://github.com/CNMAT/OSC
+* Buzzer code and hardware layout adapted from: https://learn.adafruit.com/adafruit-arduino-lesson-10-making-sounds/overview
