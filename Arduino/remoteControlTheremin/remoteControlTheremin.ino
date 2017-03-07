@@ -12,7 +12,7 @@ unsigned int localPort = 0000;      // local port to listen on
 
 WiFiUDP Udp;
 
-const int speakerPin = 1;           // where the buzzer is attached
+const int buzzerPin = 1;           // where the buzzer is attached
 const int buttonPin = 5;            // where the button is attached
 const int statusLedPin = LED_BUILTIN;
 
@@ -80,7 +80,7 @@ void loop() {
 
   // Turn off the sound when the button is pressed
   if (digitalRead(buttonPin) == LOW) {
-    noTone(speakerPin);
+    noTone(buzzerPin);
   }
 }
 
@@ -108,7 +108,7 @@ void dispatchAddress(OSCMessage &msg) {
 
 void playTone(int pitch) {
   // Make noise
-  tone(speakerPin, pitch);
+  tone(buzzerPin, pitch);
 }
 
 void printWiFiData() {
