@@ -5,7 +5,7 @@ Machine Learning workshop for IDE Academy
 
 ![Breadboard layout](Images/2017-03-07 20.44.03.jpg)
 
-### Parts:
+### Parts
 
 * Arduino MKR1000 (any Arduino with a WiFi 101 Shield should work too)
 * Buzzer
@@ -14,11 +14,11 @@ Machine Learning workshop for IDE Academy
 * Jumper wires
 * Lithium polymer battery (optional)
 
-### Assembly:
+### Assembly
 
 Connect one buzzer pin to ground and one to pin 1. Connect one push button pin to ground and one to pin 5. Connect Arduino's ground to breadboard ground. Optionally connect lipo battery to MKR1000 for standalone operation.
 
-### Software:
+### Software
 
 You will need to install the [Wifi101](https://www.arduino.cc/en/Reference/WiFi101) library, and the [OSC](https://github.com/CNMAT/OSC) library.
 
@@ -26,7 +26,7 @@ Edit the sketch 'remoteControlTheremin' with your WiFi's SSID, password and the 
 
 This was designed to be used with the Wekinator, but should work with anything capable of sending OSC messages over UDP.
 
-### Sources:
+### Sources
 
 * WiFi code adapted from: https://www.arduino.cc/en/Tutorial/Wifi101ConnectWithWPA
 * OSC code adapted from: https://github.com/CNMAT/OSC
