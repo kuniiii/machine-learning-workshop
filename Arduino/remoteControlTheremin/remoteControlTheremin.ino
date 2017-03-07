@@ -8,7 +8,7 @@ char ssid[] = "yourssid";           // your network SSID (name)
 char pass[] = "yourpass";           // your network password
 int status = WL_IDLE_STATUS;        // the WiFi radio's status
 
-unsigned int localPort = 0000;      // local port to listen on
+unsigned int localPort = 12000;      // local port to listen on
 
 WiFiUDP Udp;
 
