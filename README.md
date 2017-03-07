@@ -13,3 +13,7 @@ Parts:
 * Breadboard
 * Jumper wires
 * Lithium polymer battery (optional)
+
+Assembly:
+
+Connect one buzzer pin to ground and one to pin 1. Connect one push button pin to ground and one to pin 5. Connect Arduino's ground to breadboard ground. Optionally connect lipo battery to MKR1000 for standalone operation.
