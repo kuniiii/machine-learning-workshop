@@ -17,13 +17,13 @@ Machine Learning workshop for IDE Academy
 
 ### Assembly
 
-Connect one buzzer pin to ground and one to pin 1. Connect one push button pin to ground and one to pin 5. Connect Arduino's ground to breadboard ground. Optionally connect lipo battery to MKR1000 for standalone operation.
+Connect one buzzer pin to ground and the other to pin 1. Connect one push button pin to ground and the other to pin 5. Connect the Arduino's ground to the breadboard ground. Optionally connect lipo battery to MKR1000 for standalone operation.
 
 ### Software
 
 You will need to install the [Wifi101](https://www.arduino.cc/en/Reference/WiFi101) library, and the [OSC](https://github.com/CNMAT/OSC) library.
 
-Edit the sketch 'remoteControlTheremin' with your WiFi's SSID, password and the port you're sending OSC messages to. The Arduino listens to a message with the address '/wek/outputs'. The first data position should contain a real number ranging from zero to one. Based on this number the Arduino will set the buzzer's tone to a pitch ranging from 16 to 2048 hertz. Push the button to stop the tone from playing.
+Edit the sketch 'remoteControlTheremin' with your WiFi's SSID and password. The Arduino listens to messages on port 12000 with the address '/wek/outputs'. The first data position should contain a real number ranging from zero to one. Based on this number the Arduino will set the buzzer's tone to a pitch ranging from 16 to 2048 hertz. Push the button to stop playing the tone.
 
 This was designed to be used with the [Wekinator](http://www.wekinator.org), but should work with anything capable of sending OSC messages over UDP.
 
