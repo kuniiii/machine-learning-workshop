@@ -4,7 +4,7 @@ Machine Learning workshop for IDE Academy
 
 ## Remote control theremin
 
-![Breadboard layout](Images/2017-03-07 20.44.03.jpg)
+![Breadboard layout](Images/2017-03-07%2020.44.03.jpg?raw=true)
 
 ### Parts
 
